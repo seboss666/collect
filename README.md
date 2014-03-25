@@ -13,7 +13,7 @@ The choice of web-hosted HTML app was driven by a need to instantly check if I a
 Installation
 ============
 
-Collect needs a web server with php and mysql support (tested on Debian Squeeze with nginx 1.2.8, php5.3, mysql 5.5). Just put the files in a folder of your choice and you're almost good to go.
+Collect needs a web server with php and mysql/mariadb support (tested on Debian Wheezy with nginx/php/mariadb). Just put the files in a folder of your choice and you're almost good to go.
 
 Until future development, you need to manually create the database, import the .sql file provided and modify 'config.inc.php' to put host, db name, user/password, and the secret needed to get add/modify/delete access into the app.
 
@@ -21,9 +21,9 @@ Until future development, you need to manually create the database, import the .
 Todo
 ====
 
-Now that I have a codebase that is easily extendible, I plan to add some features :
--Swype-to-reveal panel (I have some trouble with the pageinit behaviour, so I stick with the button for the moment);
--New db table to push more media types (books, and others if you want), with tools to manage types;
+-Tools to manage types;
 -Full search (at this time only on title);
 -Internationalization (a real big work, because I can only translate french and english without help);
--Poster support, with thumbnails in the listings.
+-Poster support, with thumbnails in the listings (only on large screens).
+-Object conversion. I'm still unconfortable with the concepts, but definitely I'll have to go through it.
+-Rewrite the app to make-it work through an API. So the project will be split in two parts.
