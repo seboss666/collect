@@ -1,0 +1,21 @@
+Requisites
+==========
+
+As a web application, **collect** needs the following components :
+
+- Web server : Apache and Nginx were used successfully
+- PHP runtime : mod-php for Apache or PHP-FPM fastcgi (Apache/Nginx); even tested with HHVM, not the recently released 3.6 though.
+- Database server : MySQL or MariaDB.
+
+Under a linux ditribution, you can install all of them in one command line. Under Windows, you can try XAMPP, but I can't guarantee it will be working well.
+
+Installation
+============
+
+Until further development, you need to manually create the database/user you'll use for **collect**, then import the collect.sql file to create the tables.
+
+Then, modify the ``modele/config.inc.php`` file to set the database address, name, user, password to use.
+
+In this file you also need to define the "secret" password used to get access to modification actions : add, modify, remove a movie entry. By default just reading functions are available to anyone.
+
+Additionnaly, if you want to make it more private, you can use the web server authentication mechanism (ie. through a ``.htaccess/.htpasswd`` couple for Apache) to protect access to the entire app.
