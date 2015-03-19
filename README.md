@@ -42,12 +42,12 @@ Sreenshots
 
 Here are some images of the interface. First the default view :
 
-.. image:: https://raw.github.com/seboss666/collect/master/doc/images/collect-default.png
+![default view](https://raw.github.com/seboss666/collect/master/doc/images/collect-default.png)
 
 And then when opening the menu :
 
-.. image:: https://raw.github.com/seboss666/collect/master/doc/images/collect-menu.png
+![open menu](https://raw.github.com/seboss666/collect/master/doc/images/collect-menu.png)
 
 Here is the form to modify an existing entry (with lender name support) :
 
-.. image:: https://raw.github.com/seboss666/collect/master/doc/images/collect-modify.png
+![modify an entry](https://raw.github.com/seboss666/collect/master/doc/images/collect-modify.png)
