@@ -1,7 +1,7 @@
 <?php ob_start() ?>
       <form id="maj" action="index.php?action=update" method="post" onSubmit="check();">
           <input type="hidden" name="id" value="<?php echo $film['id']; ?>" />
-          <input type="hidden" name="titre" value=<?php echo $film['titre']; ?>" />
+          <input type="hidden" name="titre" value="<?php echo $film['titre']; ?>" />
           <ul data-role="listview" data-inset="true">
           
             <li data-role="fieldcontain">
